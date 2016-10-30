@@ -1,0 +1,36 @@
+.layout
+  display flex
+  &.layout-column
+    flex-direction column
+  &.layout-row
+    flex-direction row
+  &.main-start
+    justify-content flex-start
+  &.main-end
+    justify-content flex-end
+  &.main-center
+    justify-content center
+  &.main-space
+    justify-content space-between
+  &.cross-start
+    align-items flex-start
+  &.cross-end
+    align-items flex-end
+  &.cross-center
+    align-items center
+  &.cross-space
+    align-items space-between
+  .flex
+    flex 1
+  .self-start
+    align-self flex-start
+  .self-end
+    align-self flex-end
+  .self-center
+    align-self center
+
+.layout
+  &.layout-column
+    for col in 1..12
+      .col{col}
+        width: percentage(col/12)

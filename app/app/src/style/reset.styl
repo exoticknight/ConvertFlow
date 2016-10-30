@@ -1,0 +1,31 @@
+@import 'vars.styl'
+
+.fill-parent-height
+  height 100%
+
+html
+  height $WINDOW_HEIGHT + $WINDOW_SHADOW_WIDTH * 2
+  width $WINDOW_WIDTH + $WINDOW_SHADOW_WIDTH * 2
+  padding $WINDOW_SHADOW_WIDTH
+  -webkit-user-select none
+
+body
+  height 100%
+  width 100%
+
+h1,h2,h3,h4,h5,h6,p,span,i
+  cursor default
+
+// material framework
+.card
+  margin 0
+
+.container
+  width 90%
+
+// UI components
+.ui-window
+  @extends .fill-parent-height
+
+.ui-slide-tab
+  @extends .fill-parent-height

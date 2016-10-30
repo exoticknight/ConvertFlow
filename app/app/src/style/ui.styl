@@ -1,0 +1,67 @@
+@import './vars.styl'
+
+html
+  font-family Microsoft YaHei, Roboto
+
+.ellipsis
+  max-width 100%
+  max-height 100%
+  overflow hidden
+  text-overflow ellipsis
+
+.watermark
+  position relative
+  &::before
+    content ""
+    display block
+    position absolute
+    height 400px
+    width @height
+    top 0
+    right 0
+    transform translate(20%,-10%)
+    background-color rgba(224, 224, 224, .3)
+    z-index -1
+    mask-size cover
+
+.ui-window
+  overflow hidden
+  .ui-window-title-bar
+    height $WINDOW_TITLE_HEIGHT
+
+.ui-window-control-button
+  width 3em
+  height 100%
+  display flex
+  cursor pointer
+  i
+    cursor inherit
+    margin auto
+  &.close
+    &:hover
+      color white
+      background-color #e53935
+  &.minimize
+    &:hover
+      background-color #e0e0e0
+
+
+.holder
+  position relative
+  border 4px dashed #cfd8dc
+  color #cfd8dc
+  font-size 40px
+  text-align center
+  padding 1em
+  span
+    cursor pointer
+  &.is-hover
+    border-color #03a9f4
+  &.has-value
+    color #03a9f4
+  .input-file
+    position absolute
+    opacity 0
+    cursor pointer
+    height 100%
+    width 100%
