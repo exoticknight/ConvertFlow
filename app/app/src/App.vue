@@ -103,6 +103,8 @@ export default {
       if (!pics.find(e => e.startSecond === 0)) {
         pics.unshift({
           path: '',
+          width: 0,
+          height: 0,
           startSecond: 0
         })
       }
