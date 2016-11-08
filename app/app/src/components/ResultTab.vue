@@ -80,7 +80,7 @@
   <footer class="layout blue-grey lighten-4">
     <div class="layout layout-row main-space content">
       <button class="waves-effect waves-light btn blue-grey darken-1" @click="more" :disabled="!end">再来</button>
-      <button class="waves-effect waves-light btn blue-grey darken-1" @click="console">详细输出</button>
+      <button class="waves-effect waves-light btn blue-grey darken-1" @click="about">关于</button>
     </div>
   </footer>
 </div>
@@ -109,8 +109,8 @@ export default {
       this.$dispatch('navigate', 'media')
     },
 
-    console () {
-      this.$dispatch('navigate', 'console')
+    about () {
+      this.$dispatch('navigate', 'about')
     },
 
     registerListeners
