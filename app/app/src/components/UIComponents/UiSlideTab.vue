@@ -13,7 +13,7 @@ export default {
   props: {
     index: {
       type: Number,
-      default: 1
+      default: 0
     }
   },
 
@@ -27,7 +27,7 @@ export default {
     contentDynamicStyle () {
       return {
         width: this.tabs.length * 100 + '%',
-        transform: 'translateX(-' + (this.index - 1) * parseInt(this.$el.clientWidth) + 'px)'
+        transform: `translateX(-${this.index * parseInt(this.$el.clientWidth)}px)`
       }
     }
   }

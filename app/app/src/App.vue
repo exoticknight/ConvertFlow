@@ -83,7 +83,7 @@ export default {
 
   computed: {
     tabIndex () {
-      return TABS.indexOf(this.step) + 1
+      return TABS.indexOf(this.step)
     }
   },
 
