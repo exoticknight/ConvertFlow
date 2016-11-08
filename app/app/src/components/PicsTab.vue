@@ -30,7 +30,8 @@
           </div>
         </div>
         <div v-show="!pics.length" class="col12 layout layout-column main-end cross-center">
-          <h4>双击时间轴添加图片</h4>
+          <h4>不推荐选取大小相差太大的图片</h4>
+          <h4>双击时间轴添加图片，滚轮微调</h4>
           <i class="material-icons medium">arrow_downward</i>
         </div>
       </div>
@@ -43,8 +44,11 @@
         @pointadd="addTimePoint"
         @pointwillmove="selectPoint"
         @pointmove="onPointMove"
+        @pointdidmove="selectPoint"
         @pointdelete="onPointDelete"
-        @pointdidmove="selectPoint"></ui-timeline>
+        @pointforward="onPointForward"
+        @pointbackward="onPointBackward"
+        ></ui-timeline>
     </div>
   </main>
   <footer class="layout blue-grey lighten-4">
@@ -151,7 +155,9 @@ export default {
     addTimePoint,
     selectPoint,
     onPointMove,
-    onPointDelete
+    onPointDelete,
+    onPointForward,
+    onPointBackward
   }
 }
 
@@ -202,6 +208,17 @@ function onPointDelete (index) {
     }
   }
   this.pics.$remove(this.pics[index])
+}
+
+function onPointForward (index) {
+  this.pics[index].startSecond < Math.floor(this.media.duration) - 1 && this.pics[index].startSecond++
+}
+
+function onPointBackward (index) {
+  this.pics[index].startSecond =
+    this.pics[index].startSecond < 2
+    ? 0
+    : this.pics[index].startSecond - 1
 }
 </script>
 

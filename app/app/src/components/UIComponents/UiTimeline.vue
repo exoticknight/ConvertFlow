@@ -9,8 +9,10 @@
         <div
           v-for="thumb in timePoints"
           v-timethumb
+          class="ui-timeline-thumb light-blue"
           :start-value="thumb / actualRange"
-          class="ui-timeline-thumb light-blue">
+          @wheel="adjustThumb($event, $index) | debounce"
+          >
           <div class="ui-timeline-delete red" @click.prevent="deleteThumb($index)"><i class="material-icons tiny white-text">close</i></div>
         </div>
       </template>
@@ -18,8 +20,10 @@
         <div
           v-for="thumb in timePoints"
           v-timethumb
+          class="ui-timeline-thumb light-blue"
           :start-value="thumb[key] / actualRange"
-          class="ui-timeline-thumb light-blue">
+          @wheel="adjustThumb($event, $index) | debounce"
+          >
           <div class="ui-timeline-delete red" @click.prevent="deleteThumb($index)"><i class="material-icons tiny white-text">close</i></div>
         </div>
       </template>
@@ -134,9 +138,14 @@ export default {
   },
 
   methods: {
+    adjustThumb,
     createThumb,
     deleteThumb
   }
+}
+
+function adjustThumb ($event, $index) {
+  this.$dispatch($event.deltaY < 0 ? 'pointforward' : 'pointbackward', $index)
 }
 
 function createThumb ($event) {
