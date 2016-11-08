@@ -4,7 +4,7 @@
     <h3>输出</h3>
     <div class="flex layout layout-column">
       <p>
-        <input type="checkbox" id="has-transition" v-model="output.transition">
+        <input type="checkbox" id="has-transition" v-model="output.transition" disabled>
         <label for="has-transition">添加图片渐变切换效果</label>
       </p>
       <p>
