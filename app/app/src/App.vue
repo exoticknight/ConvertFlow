@@ -26,8 +26,8 @@
           @reset="reset"></result-tab>
       </ui-tab>
       <ui-tab>
-        <console-tab
-          @navigate="navigateToTab"></console-tab>
+        <about-tab
+          @navigate="navigateToTab"></about-tab>
       </ui-tab>
     </ui-slide-tab>
   </div>
@@ -45,9 +45,9 @@ import MediaTab from './components/MediaTab.vue'
 import PicsTab from './components/PicsTab.vue'
 import OutputTab from './components/OutputTab.vue'
 import ResultTab from './components/ResultTab.vue'
-import ConsoleTab from './components/ConsoleTab.vue'
+import AboutTab from './components/AboutTab.vue'
 
-const TABS = ['media', 'pics', 'output', 'result', 'console']
+const TABS = ['media', 'pics', 'output', 'result', 'about']
 
 export default {
   components: {
@@ -58,12 +58,12 @@ export default {
     PicsTab,
     OutputTab,
     ResultTab,
-    ConsoleTab
+    AboutTab
   },
 
   data () {
     return {
-      step: 'media',  // media | pics | output | result | console
+      step: 'media',  // media | pics | output | result | about
 
       store: {
         media: {
