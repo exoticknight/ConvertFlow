@@ -82,7 +82,6 @@ export default {
     },
 
     onFileUploadChange (e) {
-      console.log(e)
       if (e.srcElement.files[0]) {
         this.media.path = e.srcElement.files[0].path
         this.media.duration = 0

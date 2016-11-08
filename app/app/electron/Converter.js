@@ -6,8 +6,6 @@ const EE = require('events').EventEmitter
 
 const processer = require('./processer.js')
 
-function isVideo (file) {}
-
 const Converter = function () {
   const self = this;
   if (!(this instanceof Converter)) {
