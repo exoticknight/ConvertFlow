@@ -141,7 +141,7 @@ export default {
 
 function createThumb ($event) {
   let point = ($event.clientX - this.$els.track.getBoundingClientRect().left) / this.$els.track.getBoundingClientRect().width * this.actualRange
-  this.$dispatch('addpoint', point)
+  this.$dispatch('pointadd', point)
 }
 
 function deleteThumb ($index) {

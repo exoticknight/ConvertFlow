@@ -40,7 +40,7 @@
         :time-points="pics"
         :key="'startSecond'"
         :to="media.duration"
-        @addpoint="addTimePoint"
+        @pointadd="addTimePoint"
         @pointwillmove="selectPoint"
         @pointmove="onPointMove"
         @pointdelete="onPointDelete"
