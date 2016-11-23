@@ -1,7 +1,7 @@
 {
-  "name": "app",
-  "version": "0.0.0",
-  "description": "An electron-vue project",
+  "name": "ConvertFlow",
+  "version": "1.0.0",
+  "description": "an elegant app for converting image sequence to video, based on Electron and vue",
   "main": "electron.js",
   "dependencies": {
     "bluebird-queue": "0.0.8",
