@@ -1,7 +1,5 @@
 # ConvertFlow
-an elegant app for coverting image sequence to video
-
-based on [Electron](https://github.com/electron/electron), [vue](https://github.com/vuejs/vue)
+an elegant app for coverting image sequence to video, based on [Electron](https://github.com/electron/electron) and [vue](https://github.com/vuejs/vue)
 
 ## Build Setup
 
