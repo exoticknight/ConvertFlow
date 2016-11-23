@@ -1,6 +1,6 @@
 {
   "name": "ConvertFlow",
   "tagline": "an elegant app for converting image sequence to video, based on Electron and vue",
-  "body": "### Snapshot\r\n![gif](https://i.imgur.com/NirBwhe.gif)\r\n\r\n### Build Setup\r\n\r\n``` bash\r\ncd app\r\nnpm install\r\nnpm run dev\r\n```\r\n\r\n### Note\r\napp needs FFMPEG static builds, which are not provided in repo. You can download it from [here](https://ffmpeg.org/download.html) and copy 'ffmpeg.exe', 'ffprobe.exe' into app/vender.",
+  "body": "### Snapshot\r\n![gif](https://i.imgur.com/JdqEqdK.gif)\r\n\r\n### Build Setup\r\n\r\n``` bash\r\ncd app\r\nnpm install\r\nnpm run dev\r\n```\r\n\r\n### Note\r\napp needs FFMPEG static builds, which are not provided in repo. You can download it from [here](https://ffmpeg.org/download.html) and copy 'ffmpeg.exe', 'ffprobe.exe' into app/vender.",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
