@@ -6,17 +6,18 @@
       <div class="flex layout layout-column cross-center">
         <h1 style="font-size:6em;margin-bottom:0">ConvertFlow</h1>
         <h3 style="margin-top:0">转流</h3>
-      </div>
-      <div class="flex layout layout-row main-center">
-        <span class="info-line">
-          <a href="javascript:;" @click.prevent="openUrl('http://blog.e10t.net')" title="blog"><img src="../image/rss-symbol.png" height="64" width="64" alt=""></a>
-        </span>
-        <span class="info-line">
-          <a href="javascript:;" @click.prevent="openUrl('https://www.github.com/exoticknight')" title="exoticknight"><img src="../image/github-logo-1.png" height="64" width="64" alt=""></a>
-        </span>
-        <span class="info-line">
-          <a href="javascript:;" @click.prevent="openUrl('https://twitter.com/ExoticknightD')" title="ExoticknightD"><img src="../image/twitter-logo.png" height="64" width="64" alt=""></a>
-        </span>
+        <h4>by exoticknight</h4>
+        <div class="flex layout layout-row main-center">
+          <span class="info-line">
+            <a href="javascript:;" @click.prevent="openUrl('http://blog.e10t.net')" title="blog"><img src="../image/rss-symbol.png" height="32" width="32" alt=""></a>
+          </span>
+          <span class="info-line">
+            <a href="javascript:;" @click.prevent="openUrl('https://www.github.com/exoticknight')" title="exoticknight"><img src="../image/github-logo-1.png" height="32" width="32" alt=""></a>
+          </span>
+          <span class="info-line">
+            <a href="javascript:;" @click.prevent="openUrl('https://twitter.com/ExoticknightD')" title="ExoticknightD"><img src="../image/twitter-logo.png" height="32" width="32" alt=""></a>
+          </span>
+        </div>
       </div>
     </div>
   </main>

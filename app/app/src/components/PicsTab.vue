@@ -30,8 +30,8 @@
           </div>
         </div>
         <div v-show="!pics.length" class="col12 layout layout-column main-end cross-center">
-          <h4>不推荐选取大小相差太大的图片</h4>
           <h4>双击时间轴添加图片，滚轮微调</h4>
+          <h4>不推荐选取大小相差太大的图片</h4>
           <i class="material-icons medium">arrow_downward</i>
         </div>
       </div>

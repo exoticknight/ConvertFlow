@@ -8,7 +8,7 @@
         @drop.prevent="onDrop"
         @dragover.prevent="isDragover=true"
         @dragleave.prevent="isDragover=false">
-        <span class="ellipsis">{{ media.path ? media.path : '点击或拖入视频 / 音频' }}</span>
+        <span class="ellipsis">{{ media.path ? media.path : '点击选择或拖入视频 / 音频，支持mp4/aac/wav/mp3' }}</span>
         <input v-el:fileinput value="" type="file" class="input-file" accept=".mp4,.mp3,.wav,.aac" @change="onFileUploadChange">
       </div>
       <h6>&nbsp;</h6>
